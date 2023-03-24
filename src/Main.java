@@ -24,7 +24,7 @@ public class Main {
         int i = 0;
         try {
             dis = new DataInputStream(fis);
-            while (dis.readByte() != -1) { //true?
+            while (dis.available() > 0) { //pelele
 
                 data.add(dis.readByte());
                 System.out.println(data.get(i));
